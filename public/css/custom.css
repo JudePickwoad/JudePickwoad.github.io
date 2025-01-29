@@ -1,0 +1,154 @@
+/* html{
+  height: 100%;
+} */
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+}
+
+footer{
+  margin-top: auto;
+}
+/* IDs */
+#arrow{
+  color: #d6bca0;
+}
+#arrow:hover {
+  color: #fff;
+}
+
+#attribution span{
+  color: #2f5972;
+}
+#project-cards .uk-card{
+  border-radius: 25px;
+}
+
+
+
+/* Modifying Classes */
+.border{
+    border-radius: 20px;
+}
+
+.background-img{
+  background-image: url("/public/assets/pattern-back.png");
+}
+
+.button-border{
+  border-radius: 0px 0px 25px 25px;
+  background-color: #006daa;
+}
+.position-center{
+    position: absolute;
+    left: 100px;
+  }
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.about-me-img img {
+  border-radius: 10px;
+}
+
+  .light-grey-section{
+    background: #e4e4e4;
+  }
+  .light-blue-text{
+    color: #002832;
+  }
+
+
+/* Custom Components */
+/* .header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background:  url("../assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+} */
+.header-button{
+  border-radius: 25px; 
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.cover-photo {
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(248, 244, 244, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cover-photo:hover {
+  transform: translateY(-10px); /* Makes the image "hover" up */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8); /* Slightly stronger shadow on hover */
+}
+
+/* UI-KIT Modified Components */
+.uk-container{
+  max-width: 1000px;
+}
+
+.uk-subnav-pill>.uk-active>a {
+  background-color: #2f5972;
+  color: #fff;
+}
+
+.uk-section-primary:not(.uk-preserve-color) .uk-button-default{
+  background-color: #ffe1c1;
+  color: #fff;
+  border-color: rgba(255,255,255,.7);
+}
+
+
+.uk-button-default{
+  background-color: #ffe1c1;
+  color: #fff;
+  border-color: rgba(255,255,255,.7);
+}
+
+.open-sauce{
+  font-family: Open-Sauce;
+}
+
+.open-sauce-bold{
+  font-family: Open-Sauce-Bold;
+}
+
+/* Colors d6bca0 */
+.primary-color{
+  color: #ffe1c1;
+}
+
+.secondary-color{
+  color: #2f5972;
+}
+
+.primary-color-background{
+  background-color: #ffe1c1;
+}
+
+.secondary-color-background{
+  background-color: #2f5972;
+}
+
+.tertiary-color-background{
+  background-color: #2c2f33;
+}
+
+.uk-section-secondary{
+  background-color: #002451;
+}
+
+.nav {
+  background-color: #002451;
+}
+
