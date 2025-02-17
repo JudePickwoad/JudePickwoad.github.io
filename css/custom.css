@@ -64,6 +64,14 @@ footer{
     color: #002832;
   }
 
+.about-sections p {
+  text-align: justify;
+}
+
+.image-list{
+
+}
+
 
 /* Custom Components */
 /* .header {
@@ -80,14 +88,18 @@ footer{
   margin-top: 15px;
   margin-bottom: 50px;
 }
-
-.cover-photo {
+.slider img{
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
+.cover-photo, .image-list img {
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(248, 244, 244, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cover-photo:hover {
+.cover-photo:hover, .image-list img:hover{
   transform: translateY(-10px); /* Makes the image "hover" up */
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8); /* Slightly stronger shadow on hover */
 }
