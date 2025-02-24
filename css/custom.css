@@ -93,6 +93,15 @@ footer{
   width: auto;
   object-fit: cover;
 }
+.certificates img{
+  width: 500px !important;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.certificates img:hover{
+  transform: translateY(-10px); /* Makes the image "hover" up */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8); /* Slightly stronger shadow on hover */
+}
 .cover-photo, .image-list img {
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(248, 244, 244, 0.6);
