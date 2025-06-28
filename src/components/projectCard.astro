@@ -1,0 +1,54 @@
+---
+const { project } = Astro.props;
+---
+
+<div class="uk-card uk-card-default uk-card-small uk-card-hover uk-card-body">
+  <div class="uk-card-header">
+    <div class="uk-grid-small uk-flex-middle" uk-grid>
+      <div class="uk-width-expand">
+        <h3 class="uk-card-title uk-margin-remove-bottom">{project.title}</h3>
+        <p class="uk-text-meta uk-margin-remove-top">
+          <time datetime={project.year.toString()}>{project.year}</time>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-card-body">
+    <p>{project.summary}</p>
+  </div>
+
+  <div class="uk-text-center">
+    <br />
+    <a
+      class="uk-button uk-button-secondary uk-position-bottom button-border"
+      href={`#${project.modalId}`}
+      uk-toggle
+    >
+      View
+    </a>
+
+    <div id={project.modalId} class="uk-flex-top" uk-modal>
+      <div
+        class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical border"
+        style="width: 1000px;"
+      >
+        <button
+          class="uk-modal-close-default"
+          type="button"
+          uk-close
+        ></button>
+
+        <div set:html={project.details}></div>
+
+        {project.images?.length > 0 && (
+          <div class="uk-margin-top">
+            {project.images.map((src, index) => (
+              <img src={src} alt={`Project image ${index + 1}`} style={project.imageStyles?.[index] ?? ""} class="uk-margin-small-right uk-margin-small-bottom" />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</div>
